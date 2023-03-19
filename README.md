@@ -11,6 +11,18 @@ Laravel: ``8.75``
 
 ### Pergunta 1: Criação do banco de dados:
 
+Os dados de acesso ao banco de dados ficaram salvos no .env:
+````dotenv
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=oto_crm
+DB_USERNAME=root
+DB_PASSWORD=root
+````
+
+
+CREATE TABLE:
 ```sql
 CREATE TABLE `orders`
 (
@@ -28,9 +40,10 @@ CREATE TABLE `orders`
     KEY           `product_sku` (`product_sku`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 ```
-<p style="text-align: justify">
+
 Acima se encontra o ``SHOW CREATE TABLE orders`` utilizado no teste.
 
+<p style="text-align: justify">
 O arquivo enviado contendo os dados do SQL, foram encontradas duas inconsistências:
 
 1. Alguns itens encontram-se com a data ``2021-02-29`` o que ocasiona erro de integridade ao banco de dados, estes dados
