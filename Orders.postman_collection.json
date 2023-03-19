@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "aa0a9f7e-c109-49f7-b102-1f5719aa1979",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "569986"
+	},
+	"item": [
+		{
+			"name": "OrdersCountByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/count?startDate=2022-01-01&endDate=2022-01-01",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"count"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdersRevenueByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/revenue?startDate=2022-01-01",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"revenue"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-03",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderQuantityItensSelledByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/quantity?startDate=2022-01-01&endDate=2022-01-02",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"quantity"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-02"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderRetailPriceByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/retail-price?startDate=2022-01-01&endDate=2022-01-02",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"retail-price"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-02"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderAveragePriceByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/average-price?startDate=2022-01-01&endDate=2022-01-02",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"average-price"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-02"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderAllStatisticsByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/all-statistics?startDate=2022-01-01",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"all-statistics"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-02",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdersQuantityByDate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "oto-crm-test-token",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://oto_crm.test/api/order/all-statistics?startDate=2022-01-01",
+					"protocol": "http",
+					"host": [
+						"oto_crm",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"all-statistics"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-01-02",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

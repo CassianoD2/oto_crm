@@ -17,7 +17,7 @@ class ApiToken
     public function handle(Request $request, Closure $next)
     {
         if ($request->header('token') != 'oto-crm-test-token') {
-            return response()->json(['error' => true, 'message' => 'Invalid Token']);
+            return response()->json(['error' => true, 'message' => 'Invalid Token'],401);
         }
         return $next($request);
     }
